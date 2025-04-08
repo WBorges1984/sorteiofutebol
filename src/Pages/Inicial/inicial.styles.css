@@ -1,0 +1,19 @@
+#telaInicial {
+  margin: 0; /* Remove espaços indesejados */
+  height: 100vh; /* Garante que o body ocupe 100% da altura da viewport */
+  background-image: url("../../assets/inicial.png");
+  background-size: cover; /* Faz a imagem cobrir toda a área */
+  background-repeat: no-repeat; /* Evita repetição */
+  background-position: center center; /* Centraliza a imagem */
+  position: relative;
+}
+
+.buttonInicial{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+    height: 100vh;
+    margin-bottom: 100px;
+}
