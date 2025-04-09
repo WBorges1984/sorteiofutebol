@@ -8,16 +8,25 @@
 
 }
 
-.buttonInicial{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 100px;
-    
+.bodyInicial{
+   height: 100vh;
+   width: 100vw;
 }
 
-@media (min-width: 700px) {
- 
+.headerInicial{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerInicial h1{
+  font-family: 'Rubik Beastly', 'Courier New', Courier, monospace;
+  font-size: 3rem;
+}
+
+.buttonInicial{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
 }

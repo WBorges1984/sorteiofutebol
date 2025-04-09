@@ -1,0 +1,85 @@
+#telaPrincipal {
+  margin: 0; /* Remove espaços indesejados */
+  height: 100vh; /* Garante que o body ocupe 100% da altura da viewport */
+  background-image: url("../../assets/backprincipal.png");
+  background-size: cover; /* Faz a imagem cobrir toda a área */
+  background-repeat: no-repeat; /* Evita repetição */
+  background-position: center center; /* Centraliza a imagem */
+}
+
+#telaPrincipal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
+    z-index: 1;
+  }
+  
+  /* Se tiver conteúdo dentro de #telaPrincipal, coloque z-index maior */
+  #telaPrincipal > * {
+    position: relative;
+    z-index: 2;
+  }
+
+.headerPrincipal {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.headerPrincipal h1 {
+  font-family: "Rubik Beastly", "Courier New", Courier, monospace;
+  font-size: 2.7rem;
+  width: 100%;
+  text-align: center;
+  color: #FF6B2B;
+}
+
+
+.bodyPrincipal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.nrJogadores{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+}
+
+.nrJogadores h3{
+    height: max-content;
+    margin: 15px;
+}
+
+.nomeJogador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.goleiroSwith{
+    display: flex;
+    align-items: center;
+    
+}
+
+.listaJogadoresButton{
+    display: flex;
+    height: 100%;
+    gap: 10px;
+}
+
+.listaJogadoresButton textarea{
+    height: 70%;
+    margin-bottom: 25px;
+}
