@@ -1,0 +1,60 @@
+#telaTimes {
+    margin: 0; /* Remove espaços indesejados */
+    height: 100vh; /* Garante que o body ocupe 100% da altura da viewport */
+    background-image: url("../../assets/grama.jpg");
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-repeat: no-repeat; /* Evita repetição */
+    background-position: center center; /* Centraliza a imagem */
+  }
+  
+  
+  /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #telaTimes {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .headerTimes {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .headerTimes h1 {
+    font-family: 'Rubik Beastly', 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    color: #FF6B2B;
+  }
+  
+  .headerTimes div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .headerTimes h3 {
+      font-family: 'Rubik Beastly', 'Courier New', Courier, monospace;
+      font-size: 1.5rem;
+      color: #FFf;
+    }
+
+    .times {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+      
+        overflow-y: auto;
+      }

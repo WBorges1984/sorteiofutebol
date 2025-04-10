@@ -44,7 +44,7 @@ export default function Principal() {
             <textarea name="" id="" cols="30"></textarea>
           </div>
           <div className="listaButton">
-            <MyButton text={"Sortear"} onclick={() => navigate("times")} />
+            <MyButton text={"Sortear"} onclick={() => navigate('/times')} />
           </div>
         </div>
       </div>
