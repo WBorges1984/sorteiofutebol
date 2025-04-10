@@ -16,21 +16,21 @@ export default function Principal() {
 
         <div className="nrJogadores">
           <h3>Nr de Jogadores:</h3>
-          <input type="number" name="" id="" />
+          <input type="number"  />
         </div>
 
         <div className="nrJogadores">
-          <h3>Jogadores por time:</h3>
-          <input type="number" name="" id="" />
+          <h3>Jogadores por</h3> 
+          <input type="number"  />
         </div>
 
         <div className="nomeJogador">
           <div className="jogadores">
             <h3>Nome dos Jogadores</h3>
-            <input type="text" name="" id="" />
+            <input type="text"  />
             <div className="goleiroSwith">
               <h4>Goleiro?</h4>
-              <input type="checkbox" name="" id="" />
+              <input type="checkbox"  />
             </div>
           </div>
           <div className="buttonJogadores">
