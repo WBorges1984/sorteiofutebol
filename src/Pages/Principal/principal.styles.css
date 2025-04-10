@@ -7,79 +7,132 @@
   background-position: center center; /* Centraliza a imagem */
 }
 
-#telaPrincipal::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
-    z-index: 1;
-  }
-  
-  /* Se tiver conteúdo dentro de #telaPrincipal, coloque z-index maior */
-  #telaPrincipal > * {
-    position: relative;
-    z-index: 2;
-  }
+
+  /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#telaPrincipal {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
 
 .headerPrincipal {
   display: flex;
   align-items: center;
-  padding: 10px;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .headerPrincipal h1 {
-  font-family: "Rubik Beastly", "Courier New", Courier, monospace;
-  font-size: 2.7rem;
-  width: 100%;
-  text-align: center;
+  font-family: 'Rubik Beastly', 'Courier New', Courier, monospace;
+  font-size: 2rem;
   color: #FF6B2B;
 }
 
+.bodyPrincipal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 
-.bodyPrincipal{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+.nrJogadores,
+.nomeJogador {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nrJogadores input,
+.nomeJogador input[type="text"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.nomeJogador {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.jogadores {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.goleiroSwith {
+  display: flex;
+  align-items: center;
+  background-color: #ac4500;
+  padding: 5px;
+  border-radius: 5px;
+  width: fit-content;
+  gap: 0.5rem;
+}
+
+.buttonJogadores {
+  display: flex;
+  align-items: end;
+}
+
+.buttonJogadores button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.listaJogadoresButton {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.listaJogadores textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+.listaButton {
+  display: flex;
+  justify-content: center;
+  
+}
+
+/* Responsividade */
+@media (min-width: 600px) {
+  .nomeJogador {
+    flex-direction: row;
+  }
+
+  .listaJogadoresButton {
+    flex-direction: row;
     align-items: center;
-    justify-content: start;
-}
+    gap: 1rem;
+  }
 
-.nrJogadores{
-    display: flex;
-    align-items: center;
-    height: 2rem;
-}
+  .listaJogadores {
+    flex: 2;
+  }
 
-.nrJogadores h3{
-    height: max-content;
-    margin: 15px;
-}
-
-.nomeJogador{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding-left: 20px;
-}
-
-.goleiroSwith{
-    display: flex;
-    align-items: center;
-    
-}
-
-.listaJogadoresButton{
-    display: flex;
-    height: 100%;
-    gap: 10px;
-}
-
-.listaJogadoresButton textarea{
-    height: 70%;
-    margin-bottom: 25px;
+  .listaButton {
+    flex: 1;
+    justify-content: flex-end;
+  }
 }
