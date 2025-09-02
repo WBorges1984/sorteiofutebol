@@ -1,4 +1,5 @@
 import { BsReplyAllFill } from "react-icons/bs";
+import { MdGroupAdd } from "react-icons/md";
 import "./principal.styles.css";
 import { useNavigate } from "react-router-dom";
 import MyButton from "../../components/myButton/MyButton";
@@ -32,7 +33,7 @@ export default function Principal() {
           </div>
           <div className="buttonJogadores">
             <button type="button">
-              <GrAdd color="#FF6B2B" />
+              <MdGroupAdd color="#FF6B2B" />
             </button>
           </div>
         </div>
