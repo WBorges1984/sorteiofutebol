@@ -13,25 +13,22 @@ export default function Principal() {
         <h1>Fut Do Brisas</h1>
       </header>
       <div className="bodyPrincipal">
+        <div className="NumPlayers">
+          <div className="nrJogadores">
+            <h3>Nr de Jogadores:</h3>
+            <input type="number"  />
+          </div>
 
-        <div className="nrJogadores">
-          <h3>Nr de Jogadores:</h3>
-          <input type="number"  />
-        </div>
-
-        <div className="nrJogadores">
-          <h3>Jogadores por</h3> 
-          <input type="number"  />
+          <div className="nrJogadores">
+            <h3>Jogadores por:</h3> 
+            <input type="number"  />
+          </div>
         </div>
 
         <div className="nomeJogador">
           <div className="jogadores">
             <h3>Nome dos Jogadores</h3>
             <input type="text"  />
-            <div className="goleiroSwith">
-              <h4>Goleiro?</h4>
-              <input type="checkbox"  />
-            </div>
           </div>
           <div className="buttonJogadores">
             <button type="button">

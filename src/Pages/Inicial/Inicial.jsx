@@ -1,4 +1,3 @@
-import React from "react";
 import "./inicial.styles.css";
 import logo from '../../assets/lg.png'
 import MyButton from "../../components/myButton/MyButton";
