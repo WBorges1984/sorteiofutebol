@@ -46,7 +46,6 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  padding-top: 15px;
   align-items: center;
   justify-content: space-between;
 }
@@ -88,7 +87,6 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-size: 2rem;
 }
 
 .listaJogadoresButton {
@@ -114,7 +112,7 @@
 }
 
 /* Responsividade */
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .nomeJogador {
     flex-direction: row;
   }
@@ -133,4 +131,11 @@
     flex: 1;
     justify-content: flex-end;
   }
+  .buttonJogadores {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
 }
