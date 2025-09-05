@@ -8,6 +8,11 @@
 }
 
 
+input{
+  height: 35px;
+  padding: 5px;
+}
+
   /* Reset básico */
 * {
   margin: 0;
@@ -48,8 +53,18 @@
   gap: 1rem;
   align-items: center;
   justify-content: space-between;
+  font-size: 1rem;
 }
 
+.nrJogadores input {
+  width: 60px;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 6px;
+  padding: 0.25rem; 
+  height: 35px; 
+  margin-bottom: 15px;
+}
 
 .nomeJogador {
   display: flex;
@@ -84,14 +99,16 @@
 }
 
 .buttonJogadores button {
-  background-color: transparent;
+  background-color: wheat;
+  padding: 5px;
+  border-radius: 20%;
   border: none;
   cursor: pointer;
 }
 
 .listaJogadoresButton {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
 }
 
@@ -111,6 +128,7 @@
   
 }
 
+
 /* Responsividade */
 @media (max-width: 600px) {
   .nomeJogador {
@@ -118,7 +136,7 @@
   }
 
   .listaJogadoresButton {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
@@ -130,6 +148,11 @@
   .listaButton {
     flex: 1;
     justify-content: flex-end;
+    width: 100%;
+  }
+
+  .listaButton button {
+    width: 100%;
   }
   .buttonJogadores {
     height: 100%;
