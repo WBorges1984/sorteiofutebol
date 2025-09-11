@@ -1,8 +1,8 @@
-import './selectedTimes.styles.css'
+import "./selectedTimes.styles.css";
 
 export default function SelectedTimes() {
   return (
-    <article id='card'>
+    <article id="card">
       <h3>Time A</h3>
       <div className="card">
         <ol start={1}>
